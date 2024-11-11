@@ -138,7 +138,7 @@ const HomePage = () => {
             <p>CEO & Người sáng lập</p>
           </div>
           <div className="team-member">
-            <img src="https://scontent.fdad3-1.fna.fbcdn.net/v/t39.30808-1/465839446_1497316174303790_4852184452369956642_n.jpg?stp=dst-jpg_s160x160&_nc_cat=103&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeHabzipcn339j37QNHVTVIwXMIub6-j0chcwi5vr6PRyIf4M6lRo95VWB2y4llWjBNS8gFXxnU-60CkvPTb6Aup&_nc_ohc=faidCdOciw4Q7kNvgE01Q_7&_nc_zt=24&_nc_ht=scontent.fdad3-1.fna&_nc_gid=Ad4OMug3dP2NJ3tTekpgucn&oh=00_AYC2rAxIdvQDYotP6Nn54TJk5j425nJ5ywXGmUaATevUBQ&oe=6730B662" alt="Nguyễn Anh Tú" />
+            <img src="https://scontent.fdad1-4.fna.fbcdn.net/v/t39.30808-6/465839446_1497316174303790_4852184452369956642_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHabzipcn339j37QNHVTVIwXMIub6-j0chcwi5vr6PRyIf4M6lRo95VWB2y4llWjBNS8gFXxnU-60CkvPTb6Aup&_nc_ohc=725qx4EOE1AQ7kNvgGSPSdI&_nc_zt=23&_nc_ht=scontent.fdad1-4.fna&_nc_gid=AoxHINC1UEJFVpALSsS11eA&oh=00_AYB1-mOOZo6iKjyhx7IC0-6MMBqUHn7M1l3x5N7jnrrgcA&oe=6737F724" alt="Nguyễn Anh Tú" />
             <h3>Nguyễn Anh Tú</h3>
             <p>CTO</p>
           </div>
