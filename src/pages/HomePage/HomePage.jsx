@@ -32,7 +32,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetchFeedback = async () => {
       try {
-        const response = await fetch('http://localhost:8080/v1/api/users/feedback', {
+        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/v1/api/users/feedback`, {
           method: 'GET',
         });
         const data = await response.json();
