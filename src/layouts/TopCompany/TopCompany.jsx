@@ -12,7 +12,7 @@ const TopCompany = () => {
     useEffect(() => {
         const fetchCompanies = async () => {
             try {
-                const response = await fetch('http://localhost:8080/top-companies');
+                const response = await fetch('https://joblink-backend-rspb.onrender.com/top-companies');
                 const data = await response.json();
                 setCompanies(data);
             } catch (error) {
@@ -26,7 +26,7 @@ const TopCompany = () => {
     useEffect(() => {
         const fetchCareers = async () => {
             try {
-                const response = await axios.get('http://localhost:8080/profession');
+                const response = await axios.get('https://joblink-backend-rspb.onrender.com/profession');
                 setCareer(response.data);
                 console.log('Fetch profession:', response.data);
             } catch (error) {
