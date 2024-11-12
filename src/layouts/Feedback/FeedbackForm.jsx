@@ -7,9 +7,14 @@ const FeedbackForm = () => {
     const [feedbackName, setFeedbackName] = useState('');
     const [description, setDescription] = useState('');
     const [message, setMessage] = useState('');
+    const VITE_BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
     const toggleForm = () => {
         setIsOpen(!isOpen);
     };
+
+    useEffect(() => {
+        console.log("VITE_BACKEND_URL: ", VITE_BACKEND_URL);
+    })
 
     const userId = useSelector((state) => state.user.account.id);
 
