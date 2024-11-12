@@ -25,10 +25,10 @@ const HomePage = () => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
-    autoplay: true,       
+    autoplay: true,
     autoplaySpeed: 2000,
   };
-  
+
   useEffect(() => {
     const fetchFeedback = async () => {
       try {
@@ -76,11 +76,11 @@ const HomePage = () => {
           setCompanies(data);
         } else {
           console.error("Dữ liệu công ty không đúng cấu trúc hoặc không phải là mảng:", data);
-          setCompanies([]); 
+          setCompanies([]);
         }
       } catch (error) {
         console.error('Error fetching companies:', error);
-        setCompanies([]); 
+        setCompanies([]);
       }
     };
     fetchCompanies();
@@ -192,19 +192,19 @@ const HomePage = () => {
       <br /><br /><br />
 
       <div className="inline-container">
-                <img src="images/ok.png" alt="alt" height="700px" />
-                <div>
-                    <h4>
-                        "Bằng cách ghi lại ước mơ và mục tiêu trên giấy, bạn đã bắt đầu hành trình trở thành phiên bản tốt nhất của chính mình. Hãy nắm giữ tương lai trong bàn tay của bạn."
-                    </h4>
-                    <p>--- Mark Victor Hansen ---</p>
-                    <h1>Hãy để chúng tôi giúp bạn</h1>
-                    <h3>
-                        bằng cách <span className="dangerous">tải ứng dụng ngay</span>:
-                    </h3>
-                    <img src="images/qr.png" alt="alt" height="200px" className="qr-img"/>
-                </div>
-            </div>  
+        <img src="images/ok.png" alt="alt" height="700px" />
+        <div>
+          <h4>
+            "Bằng cách ghi lại ước mơ và mục tiêu trên giấy, bạn đã bắt đầu hành trình trở thành phiên bản tốt nhất của chính mình. Hãy nắm giữ tương lai trong bàn tay của bạn."
+          </h4>
+          <p>--- Mark Victor Hansen ---</p>
+          <h1>Hãy để chúng tôi giúp bạn</h1>
+          <h3>
+            bằng cách <span className="dangerous">tải ứng dụng ngay</span>:
+          </h3>
+          <img src="images/qr.png" alt="alt" height="200px" className="qr-img" />
+        </div>
+      </div>
     </div>
   );
 };
