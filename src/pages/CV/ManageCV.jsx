@@ -344,7 +344,7 @@ const ManageCV = () => {
         <div className='all-created-cv'>
             <h1>Danh Sách CV Đã Tạo Của Bạn:</h1>
             {cvList.length === 0 ? (
-                <p>Không có CV nào được tạo.</p>
+                <p>Đang tải...</p>
             ) : (
                 <ul className='cv-list'>
                     {cvList.map((cv) => (

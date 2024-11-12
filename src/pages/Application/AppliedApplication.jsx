@@ -55,7 +55,7 @@ const AppliedApplication = () => {
         <div className="all-applications">
             <h1>DANH SÁCH CÔNG VIỆC ĐÃ ỨNG TUYỂN</h1>
             {applications.length === 0 ? (
-                <p>Không có ứng tuyển nào</p>
+                <p>Đang tải...</p>
             ) : (
                 <ul className="application-list">
                     {applications.map((application) => (
