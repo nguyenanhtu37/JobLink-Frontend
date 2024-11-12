@@ -32,7 +32,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetchFeedback = async () => {
       try {
-        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/v1/api/users/feedback`, {
+        const response = await fetch(`https://joblink-backend-rspb.onrender.com/v1/api/users/feedback`, {
           method: 'GET',
         });
         const data = await response.json();
