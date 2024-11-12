@@ -53,7 +53,7 @@ const RecruitmentPage = () => {
         };
 
         try {
-            const response = await fetch('http://localhost:8080/jobs/search', {
+            const response = await fetch('https://joblink-backend-rspb.onrender.com/jobs/search', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -97,7 +97,7 @@ const RecruitmentPage = () => {
     };
 
     const getAllRecruitments = async () => {
-        axios.get('http://localhost:8080/job-company')
+        axios.get('https://joblink-backend-rspb.onrender.com/job-company')
             .then(response => {
                 setJobListings(response.data);
                 console.log('Fetched job listings: ', response.data);
@@ -112,7 +112,7 @@ const RecruitmentPage = () => {
         const encodeSelectedLocation = encodeURIComponent(selectedLocation);
         console.log('Encoded location before sending to server: ', encodeSelectedLocation);
         try {
-            const response = await fetch(`http://localhost:8080/filterByLocation?selectedLocation=${encodeSelectedLocation}`, {
+            const response = await fetch(`https://joblink-backend-rspb.onrender.com/filterByLocation?selectedLocation=${encodeSelectedLocation}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -129,7 +129,7 @@ const RecruitmentPage = () => {
     //filter by salary:
     const fetchJobsBySalary = async () => {
         try {
-            const response = await fetch(`http://localhost:8080/filterBySalary?selectedSalary=${selectedSalary}`, {
+            const response = await fetch(`https://joblink-backend-rspb.onrender.com/filterBySalary?selectedSalary=${selectedSalary}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -146,7 +146,7 @@ const RecruitmentPage = () => {
     // filter theo experience:
     const fetJobsByExperience = async () => {
         try {
-            const response = await fetch(`http://localhost:8080/filterByExperience?selectedExperience=${selectedExperience}`, {
+            const response = await fetch(`https://joblink-backend-rspb.onrender.com/filterByExperience?selectedExperience=${selectedExperience}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -163,7 +163,7 @@ const RecruitmentPage = () => {
     // filter theo profession (chuyen nganh)
     const fetJobsByProfession = async () => {
         try {
-            const response = await fetch(`http://localhost:8080/filterByProfession?selectedProfession=${selectedProfession}`, {
+            const response = await fetch(`https://joblink-backend-rspb.onrender.com/filterByProfession?selectedProfession=${selectedProfession}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -241,7 +241,7 @@ const RecruitmentPage = () => {
         getAllRecruitments();
 
         // Fetch profession options
-        axios.get('http://localhost:8080/profession')
+        axios.get('https://joblink-backend-rspb.onrender.com/profession')
             .then(response => {
                 setProfessionOptions(response.data);
             })
@@ -255,7 +255,7 @@ const RecruitmentPage = () => {
     // Hàm gọi API để lấy dữ liệu từ backend
     const fetchJobStats = async () => {
         try {
-            const response = await axios.get('http://localhost:8080/v1/api/users/job-stats');
+            const response = await axios.get('https://joblink-backend-rspb.onrender.com/v1/api/users/job-stats');
             setJobStats(response.data);
         } catch (error) {
             console.error('Error fetching job stats:', error);

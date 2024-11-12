@@ -54,7 +54,7 @@ const HomePage = () => {
   }, []);
 
   useEffect(() => {
-    axios.get('http://localhost:8080/profession')
+    axios.get('https://joblink-backend-rspb.onrender.com/profession')
       .then(response => {
         setProfession(response.data);
         console.log("Fetched professions: ", response.data);
@@ -67,7 +67,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetchCompanies = async () => {
       try {
-        const response = await fetch('http://localhost:8080/company-list');
+        const response = await fetch('https://joblink-backend-rspb.onrender.com/company-list');
         const data = await response.json();
 
         console.log('Fetched companies: ', JSON.stringify(data, null, 2));
